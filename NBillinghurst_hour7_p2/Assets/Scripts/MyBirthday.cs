@@ -7,7 +7,7 @@ public class MyBirthday : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float day = 1;
+        float day = 1f;
         for (int i = 0; day <= 30; i++)
         {
             if (day == 30)
