@@ -31,6 +31,23 @@ public class Player : MonoBehaviour
         float xMove = Input.GetAxis("Horizontal") * Time.deltaTime * strafeSpeed;
 
         Vector3 position = transform.position;
+        position.x += xMove;
+        position.x = Mathf.Clamp(position.x, -bounds, bounds);
+        transform.position = position;
 
+        if (Input.GetButtonDown("Jump") && canPhase)
+        {
+            canPhase = false;
+            mesh.material = phasedMat; 
+            collision.enabled = false;
+            Invoke("PhaseIn", phaseCooldown);
+        }
+    }
+    void PhaseIn() 
+    {
+        canPhase = true;
+        mesh.material = normalMat; 
+        collision.enabled = true; 
     }
 }
+

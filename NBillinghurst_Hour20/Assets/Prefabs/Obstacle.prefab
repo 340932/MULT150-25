@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1746627985219408168}
   - component: {fileID: 8795231067840918493}
   - component: {fileID: 7947532605389736251}
+  - component: {fileID: 4471322985246728684}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -177,3 +178,18 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &4471322985246728684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5471589106567255842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37b32872f5bb6c4fa1eb8bc0eb9bfa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 0}
+  moveSpeed: 20
+  timeAmount: -0.5
